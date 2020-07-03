@@ -1,4 +1,5 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,12 +12,13 @@ import thumbnailStaff from "../../static/images/feature-user.png"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Make your Staff and Workspace Happy"/>
+        <SEO title="Make your Staff and Workspace Happy" />
 
         <div className={"page-header home"}>
-            <h1>Make your Staff and Workspace Happy</h1>
-            <p>HiStaff gives your complex the opportunity to increase the percentage of happiness<br/>and enjoyment of your staff and as a result, bring productivity to your workspace.</p>
-            <img alt={"Dashboard"} src={featureImage}/>
+            <AnchorLink to="/member/mak#hoge" title="mak" stripHash>
+                <h1>Splash</h1>
+            </AnchorLink>
+            <img alt={"Dashboard"} src={featureImage} />
         </div>
 
         <div className={"container"}>
@@ -25,7 +27,7 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Event"} src={thumbnailEvent}/>
+                                <img alt={"Event"} src={thumbnailEvent} />
                             </div>
                         </div>
 
@@ -43,13 +45,13 @@ const IndexPage = () => (
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
                                 <h2>Public Board</h2>
-                                <p>Let the staff write down on the board freely,<br/>Joking with each other and writing cool content can make the workplace more diverse and attractive for employees. </p>
+                                <p>Let the staff write down on the board freely,<br />Joking with each other and writing cool content can make the workplace more diverse and attractive for employees. </p>
                             </div>
                         </div>
 
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Board"} src={thumbnailBoard}/>
+                                <img alt={"Board"} src={thumbnailBoard} />
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,7 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"News"} src={thumbnailNews}/>
+                                <img alt={"News"} src={thumbnailNews} />
                             </div>
                         </div>
 
@@ -83,7 +85,7 @@ const IndexPage = () => (
 
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Team"} src={thumbnailTeams}/>
+                                <img alt={"Team"} src={thumbnailTeams} />
                             </div>
                         </div>
                     </div>
@@ -93,7 +95,7 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Users"} src={thumbnailStaff}/>
+                                <img alt={"Users"} src={thumbnailStaff} />
                             </div>
                         </div>
 
