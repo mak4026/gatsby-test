@@ -251,6 +251,49 @@ body {
     }
   }
 
+  .icons-header{
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 30px 0;
+    border-radius: 40px;
+  }
+  
+  .icons{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+
+    [class^="col"] {
+      float: none;
+      text-align: center;
+    }
+
+    .icon-item {
+      display: inline-block;
+    }
+    .name {
+      display: block;
+      text-align: center;
+      margin: 10px auto;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 200px;
+      border-radius: 25%;
+      border: solid 3px;
+      border-color: red;
+      box-sizing: border-box;
+      margin: 0 auto 20px;
+    }
+  }
+
   .targets {
     margin: 120px 0 0;
 
