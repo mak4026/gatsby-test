@@ -3,6 +3,9 @@ $break-small: 719px;
 body {
   font-family: sans-serif;
   color: #797283;
+  background-image: url(../images/egg_white.png);
+  background-attachment: fixed;
+  
 
   p {
     font-family: sans-serif;
@@ -59,8 +62,9 @@ body {
   .page-header {
     text-align: center;
     padding: 100px 0 100px 0;
-    background-color: #fdfaff;
-    border-radius: 0px 0px 40px 40px;
+    background-color: orange;
+    // border-radius: 0px 0px 40px 40px;
+    box-shadow: 0 60px 40px 30px rgba($color: orange, $alpha: 1.0);
 
     h1 {
       font-style: normal;
